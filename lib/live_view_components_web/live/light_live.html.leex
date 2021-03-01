@@ -1,0 +1,37 @@
+<section class="w-screen">
+  <h1 class="text-center my-10 text-5xl font-bold"> Front Porch Light </h1>
+
+  <div class="flex justify-center w-screen">
+    <div class="flex w-11/12 max-w-screen-md bg-gray-200 rounded-lg">
+
+      <span style="width: <%= @brightness %>%;"
+            class="text-center py-3 bg-yellow-300 rounded-lg transition-all duration-500">
+        <%= @brightness %>%
+      </span>
+
+    </div>
+  </div>
+  
+  <div class="flex justify-center w-screen my-10">
+    <button phx-click="off"
+            class="w-20 mx-2 py-2 px-4 border-2 border-gray-400 rounded-lg">
+      <img src="/images/light-off.svg">
+    </button>
+
+    <button phx-click="down"
+            class="w-20 mx-2 py-2 px-4 border-2 border-gray-400 rounded-lg">
+      <img src="/images/down.svg">
+    </button>
+
+    <button phx-click="up"
+            class="w-20 mx-2 py-2 px-4 border-2 border-gray-400 rounded-lg">
+      <img src="/images/up.svg">
+    </button>
+    
+    <button phx-click="on"
+            class="w-20 mx-2 py-2 px-4 border-2 border-gray-400 rounded-lg">
+      <img src="/images/light-on.svg">
+    </button>
+  </div>
+  
+</section>

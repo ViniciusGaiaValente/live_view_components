@@ -17,7 +17,8 @@ defmodule LiveViewComponentsWeb.Router do
   scope "/", LiveViewComponentsWeb do
     pipe_through :browser
 
-    live "/", PageLive, :index
+    live "/", PageLive
+    live "/light", LightLive
   end
 
   if Mix.env() in [:dev, :test] do
