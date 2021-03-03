@@ -6,6 +6,10 @@
 
 @import "../node_modules/nprogress/nprogress.css";
 
+iframe {
+  max-width: 100%;
+}
+
 /* LiveView specific classes for your customizations */
 .invalid-feedback {
   color: #a94442;
